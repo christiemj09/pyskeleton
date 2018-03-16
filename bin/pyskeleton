@@ -8,9 +8,9 @@ PROJECT="$(basename $(pwd))"
 cat_setup_template > setup.py
 
 # Project hygiene: README.md, requirements.txt
-echo "A Python project." > README.md
-echo "# project requirements" > requirements.txt
+touch README.md
+touch requirements.txt
 
 # Project directories: Package code, scripts, and tests
-mkdir "$PROJECT" bin tests
+mkdir -p "$PROJECT" bin tests
 touch "$PROJECT/__init__.py" tests/__init__.py
