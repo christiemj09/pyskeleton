@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Initialize a Python project skeleton.
+
+PROJECT="$(basename $(pwd))"
+
+# Template for setup.py
+cat_setup_template > setup.py
+
+# Project hygiene: README.md, requirements.txt
+echo "A Python project." > README.md
+echo "# project requirements" > requirements.txt
+
+# Project directories: Package code, scripts, and tests
+mkdir "$PROJECT" bin tests
+touch "$PROJECT/__init__.py" tests/__init__.py

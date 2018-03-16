@@ -1,0 +1,1 @@
+-e git+https://github.com/christiemj09/config.git@44a92cf560b0b509df926b302fa2d19131f24e19#egg=config
