@@ -10,7 +10,8 @@ import pkg_resources
 def main():
     resource_package = 'pyskeleton'
     resource_path = '/'.join(['setup_template.txt'])
-    print(pkg_resources.resource_string(resource_package, resource_path))
+    template = pkg_resources.resource_string(resource_package, resource_path)
+    print(template.decode('utf-8'))  # bytes to string
 
 
 if __name__ == '__main__':
