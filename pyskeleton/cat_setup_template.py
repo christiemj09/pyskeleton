@@ -9,7 +9,7 @@ import pkg_resources
 
 def main():
     resource_package = 'pyskeleton'
-    resource_path = '/'.join('files', 'setup_template.py')
+    resource_path = '/'.join(['files', 'setup_template.py'])
     print(pkg_resources.resource_stream(resource_package, resource_path))
 
 
